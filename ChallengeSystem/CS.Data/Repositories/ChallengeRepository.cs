@@ -120,7 +120,7 @@
                     .Where(x => (x.StartDate >= currentDateTime) && !x.IsCompleted)
                     .OrderBy(x => x.StartDate)
                     .Select(x => x.StartDate)
-                    .FirstOrDefault();
+                    .First();
         }
 
         public Challenge Add(ChallengeInputModel challenge)
