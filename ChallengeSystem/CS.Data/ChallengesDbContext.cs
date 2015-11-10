@@ -7,7 +7,7 @@
 
     public class ChallengesDbContext : DbContext
     {
-        public ChallengesDbContext() : base("ChallengesDB")
+        public ChallengesDbContext() : base("ChallengeSystemDB")
         {
             Database.SetInitializer<ChallengesDbContext>(new MigrateDatabaseToLatestVersion<ChallengesDbContext, Configuration>());
         }
